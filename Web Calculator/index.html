@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- using "defer" attribute so JavaScript file executes AFTER the page is done parsing -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- <div> for the main calculator body (buttons and output screen) -->
+    <div class="calculator-grid">
+        <!-- <div> for the output screen -->
+        <div class="output">
+            <!-- previous operand <div> represents the number, that user applied the operation to (upper number on the output screen) -->
+            <div data-previous-operand class="previous-operand"></div>
+            <!-- current operand <div> represents the number, that user is currently working with (lower number on the output screen) -->
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <!-- buttons of the calculator. "span-two" class represents the buttons, that take twice as much space as buttons outside that class -->
+        <!-- as classes are used for CSS, "data" attributes are used for JavaScript -->
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>-</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>+</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
+    </div>
+</body>
+
+</html>
